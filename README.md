@@ -71,7 +71,7 @@ The `data/sample_crz_fixed.zip` archive contains the repository's sampled analyt
 
 The Orange workflow segments **256 active NYC taxi zones** using 10 features: `trips_per_day_25`, `pay_per_hour_25`, `miles_per_trip_25`, `driver_share_25`, `avg_wait_sec_25`, `short_share_25`, `share_to_crz_25`, `peak_share_25`, `trips_growth`, and `pay_per_hour_growth`.
 
-The exported Orange report uses **K = 3** (K-Means++ initialization, 10 restarts). Its reported silhouette score for K = 3 is **0.352**; K = 2 scored **0.418**, so the three-cluster solution is a more granular, interpretability-oriented segmentation rather than the highest-silhouette option.
+We chose silhouette score for K = 3 is **0.352**; K = 2 scored **0.418**, so the three-cluster solution is a more granular, interpretability-oriented segmentation rather than the highest-silhouette option.
 
 | Cluster | Interpretation | Zones |
 | --- | --- | ---: |
